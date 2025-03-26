@@ -1,0 +1,5 @@
+<?php
+$ms = 100;
+$km = 100*3.6;
+echo"O valor de metros agora em kilometros é: ". $km;
+?>
