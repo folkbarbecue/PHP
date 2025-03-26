@@ -1,0 +1,25 @@
+<?php
+$numero = 4;
+//Esse resultp10 é o resultado do numero dividido por 10
+$resultp10 = $numero%10;
+$resultp5 = $numero%5;
+$resultp2 = $numero%2;
+
+ if ($resultp10 == 0) {
+     echo"Seu numero é divisivel por 10" . PHP_EOL;
+ } else{
+     echo "Seu numero não é divisivel por 10" . PHP_EOL;
+ }
+
+if ($resultp5 == 0) {
+     echo"Seu numero é divisivel por 5" . PHP_EOL;
+ } else{
+     echo "Seu numero não é divisivel por 5" . PHP_EOL;
+ }
+if ($resultp2 == 0) {
+     echo"Seu numero é divisivel por 2" . PHP_EOL;
+ } else{
+     echo "Seu numero não é divisivel por 2" . PHP_EOL;
+ }
+
+?>
