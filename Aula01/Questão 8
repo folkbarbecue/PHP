@@ -1,0 +1,6 @@
+<?php
+$salariofixo  = 1200;
+$comissvalordevendas = 20000 * 0.15 ;
+$salariototal = $comissvalordevendas+ $salariofixo;
+echo "O seu salario total com a comissão é de: ". $salariototal;
+?>
