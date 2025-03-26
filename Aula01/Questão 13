@@ -1,0 +1,10 @@
+<?php
+$rend = 1220;
+$pretendem = 90000;
+$max = $rend * 0.30;
+if ($pretendem > $max) {
+    echo "Esse emprestimo não pode ser concebido";
+} else{
+    echo "Esse emprestimo pode ser concebido";
+}
+?>
