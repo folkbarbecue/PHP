@@ -1,0 +1,6 @@
+<?php
+$idadeanos = 15;
+$idadem = 6;
+$idadedias = $idadem*30 + ($idadeanos*12)*30;
+echo "A sua idade em dias é de " . $idadedias;
+?>
