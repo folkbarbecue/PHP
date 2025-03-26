@@ -1,0 +1,11 @@
+<?php
+$salario = 1200;
+$prestacao = 500;
+
+if ($prestacao > 0.2 * $salario ) {
+    echo "Seu emprestimo não pode ser concebido";
+} else{
+    echo "Seu emprestimo pode ser concebido";
+}
+
+?>
