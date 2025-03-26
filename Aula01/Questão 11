@@ -1,0 +1,9 @@
+<?php
+$salario = 1200;
+$desconto = $salario * 0.11;
+if ($desconto > 334.29) {
+    $desconto = 334.29;
+}
+$salariodescontado = $salario + $desconto;
+echo "O valor total com o desconto de até no maximo 334,29 é de: ". $salariodescontado;
+?>
