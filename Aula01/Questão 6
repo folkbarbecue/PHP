@@ -1,0 +1,10 @@
+<?php
+$idade = 68;
+if ($idade < 16) {
+    echo"Não eleitor";
+} else if ($idade > 17 && $idade < 66){
+    echo"Eleitor obrigatorio";
+} else{
+    echo "Eleitor facultativo";
+}
+?>
