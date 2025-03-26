@@ -1,0 +1,18 @@
+<?php
+$peso = 60;
+$altura = 1.70;
+$quadradodaaltura = $altura * $altura;
+$imc = $peso/$quadradodaaltura;
+if ($imc < 20) {
+    echo "Você está abaixo do peso";
+} else if($imc > 19 && $imc < 26) {
+    echo "Peso ideal";
+}else if($imc > 25 && $imc < 31){
+    echo "Sobre Peso";
+} elseif ($imc > 30 && $imc < 41){
+    echo "Obeso";
+}
+else {
+    echo "Sobre Peso";
+}
+?>
