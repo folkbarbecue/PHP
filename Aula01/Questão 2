@@ -1,0 +1,14 @@
+<?php
+$ano = 2006;
+$idade = 2025 - $ano;
+$idadem = 18;
+if ($idade >= $idadem) {
+    $nome ="Luiza";
+        echo "Parabéns ".$nome. " sua entrada foi permitida" ;
+} else{
+    echo 'Sua entrada foi negada';
+}
+
+
+
+?>
