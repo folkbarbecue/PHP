@@ -1,0 +1,7 @@
+<?php
+$custofabrica = 40000;
+$prevendedor = $custofabrica * 0.25;
+$impostos = $custofabrica * 0.40;
+$ValorDeMercado = $custofabrica + $prevendedor + $impostos;
+echo "O valor de mercado do carro é : " . $ValorDeMercado;
+?>
