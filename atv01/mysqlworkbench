@@ -1,0 +1,12 @@
+create database cadastro;
+use cadastro;
+create table cadastro(
+id_cadastro int primary key auto_increment,
+nome varchar(255),
+email varchar(255),
+senha varchar(255),
+s varchar(255),
+data_nascimento varchar(255)
+);
+
+select * from cadastro;
