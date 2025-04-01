@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCOLAS</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <script src="./assets/script/script.js"></script>
+
+    <form action="cadastrar.php" method="post">
+        <p>Data de nascimento</p>
+        <input type="date" name="data_nascimento" class="b1">
+        <br><br>
+        <p>Seu nome vai aqui:</p>
+        <input type="text" name="nome" class="o1" placeholder="Insira o seu nome">
+        <br><br>
+        <p>Seu email vai aqui:</p>
+        <input type="text" name="email" class="o2" placeholder="Insira o seu email">
+        <br><br>
+        <p>Senha</p>
+        <input type="password" name="senha" class="o3" placeholder="Mínimo de 8 caracteres">
+        <br><br>
+        <p>Série</p>
+        <select name="s" id="s" class="b2">
+            <option value="1">1º Ano</option>
+            <option value="2">2º Ano</option>
+            <option value="3">3º Ano</option>
+        </select>
+        <br><br>
+        <button type="submit">Cadastrar</button>
+        <button type="button" onclick="alertar()">Ver alunos</button>
+        <button type="button" onclick="alertar()">Atualizar</button>
+        <button type="button" onclick="alertar()">Excluir aluno</button>
+    </form>
+</body>
+</html>
