@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vaga na Globo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .job-info {
+            width: 60%;
+        }
+
+        .company-info {
+            width: 30%;
+            text-align: center;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        .salary, .vacancies {
+            display: inline-block;
+            background-color: #e0e0e0;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .apply-button, .company-button {
+            background-color: #4285f4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .curriculo-img {
+            width: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Início</li>
+                <li>Mensagens</li>
+                <li>Achar vagas</li>
+                <li>Avaliações de Empresas</li>
+                <li>Empresa</li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <button>Ver seu perfil</button>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="job-info">
+            <img src="globo-logo.png" alt="Logo da Globo" class="logo">
+            <div class="salary">Salário<br>R$2.000</div>
+            <div class="vacancies">Vagas<br>50</div>
+
+            <h2>Profissional em Jornalismo</h2>
+            <p>Responsável por pesquisar, escrever, editar e divulgar notícias e informações para o público. Seu trabalho envolve comunicar fatos, reportagens e análises sobre uma variedade de temas, como política, economia, cultura, esportes, ciência, tecnologia, entre outros. O jornalismo pode ser realizado em diferentes formatos, como impresso, digital, rádio, TV ou plataformas online.</p>
+
+            <p><strong>Carga Horária:</strong><br>40 horas semanais</p>
+            <p><strong>Local de Trabalho:</strong><br>Endereço: Rua da Aurora, Recife, Brazil 50040-090.</p>
+
+            <button class="apply-button">Enviar seu currículo</button>
+            <button class="apply-button">Enviar seu currículo à empresa</button>
+        </div>
+
+        <div class="company-info">
+            <button class="company-button">Globo 5.0★</button>
+            <img src="curriculo.png" alt="Enviar currículo" class="curriculo-img">
+        </div>
+    </div>
+</body>
+</html>
