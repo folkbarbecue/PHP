@@ -1,0 +1,36 @@
+create database atv;
+use atv;
+-- drop database atv;
+create table funcionario(
+id_funcionario int primary key auto_increment not null,
+nomef varchar(255),
+cpff varchar(255),
+cargof varchar(255),
+senhaf varchar(255)
+);
+
+create table departamento(
+id_departamento int primary key auto_increment,
+nomed varchar(255),
+nomed2 varchar(255)
+);
+select * from departamento;
+
+create table projetos(
+id_projeto int primary key auto_increment,
+nomep varchar(255),
+nomep2 varchar(255),
+descrp varchar(255)
+);
+
+select * from projetos;
+
+create table cliente(
+id_cliente int primary key auto_increment,
+nomec varchar(255),
+cpfc varchar(255),
+telefonec varchar(255)
+);
+
+select* from cliente;
+
