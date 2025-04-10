@@ -1,0 +1,16 @@
+create database atv;
+use atv;
+drop database atv;
+
+create table cadastro1(
+id_cadastro1 int primary key auto_increment,
+cpf varchar(255),
+senha varchar(255)
+);
+create table cadastro(
+id_cadastro int primary key auto_increment,
+cnpj varchar(255),
+senha1 varchar(255)
+);
+
+select * from cadastro1;
