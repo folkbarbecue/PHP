@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand">Controle Financeiro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.php">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="text-center mb-4">Controle Financeiro Mensal</h2>
+        <form id="formPrincipal" action="salvar_valores.php" method="POST">
+            <div class="form-grid">
+                <div class="form-card">
+                    <h3>Janeiro</h3>
+                    <div class="form-group">
+                        <label>Salário Mensal:</label>
+                        <input type="text" name="sl1" id="sl1" placeholder="R$ 0,00">
+                    </div>
+                    <div class="form-group">
+                        <label>Gastos Mensais:</label>
+                        <input type="text" name="gm1" id="gm1" placeholder="R$ 0,00">
+                    </div>
+                    <button type="button" onclick="calcularm1()">Calcular Saldo</button>
+                    <div class="resultado" id="r1"></div>
+                </div>
+                <div class="form-card">
+                    <h3>Fevereiro</h3>
+                    <div class="form-group">
+                        <label>Salário Mensal:</label>
+                        <input type="text" name="sl2" id="sl2" placeholder="R$ 0,00">
+                    </div>
+                    <div class="form-group">
+                        <label>Gastos Mensais:</label>
+                        <input type="text" name="gm2" id="gm2" placeholder="R$ 0,00">
+                    </div>
+                    <button type="button" onclick="calcularm2()">Calcular Saldo</button>
+                    <div class="resultado" id="r2"></div>
+                </div>
+                <div class="form-card">
+                    <h3>Março</h3>
+                    <div class="form-group">
+                        <label>Salário Mensal:</label>
+                        <input type="text" name="sl3" id="sl3" placeholder="R$ 0,00">
+                    </div>
+                    <div class="form-group">
+                        <label>Gastos Mensais:</label>
+                        <input type="text" name="gm3" id="gm3" placeholder="R$ 0,00">
+                    </div>
+                    <button type="button" onclick="calcularm3()">Calcular Saldo</button>
+                    <div class="resultado" id="r3"></div>
+                </div>
+                <div class="form-card">
+                    <h3>Abril</h3>
+                    <div class="form-group">
+                        <label>Salário Mensal:</label>
+                        <input type="text" name="sl4" id="sl4" placeholder="R$ 0,00">
+                    </div>
+                    <div class="form-group">
+                        <label>Gastos Mensais:</label>
+                        <input type="text" name="gm4" id="gm4" placeholder="R$ 0,00">
+                    </div>
+                    <button type="button" onclick="calcularm4()">Calcular Saldo</button>
+                    <div class="resultado" id="r4"></div>
+                </div>
+                <div class="form-card">
+                    <h3>Maio</h3>
+                    <div class="form-group">
+                        <label>Salário Mensal:</label>
+                        <input type="text" name="sl5" id="sl5" placeholder="R$ 0,00">
+                    </div>
+                    <div class="form-group">
+                        <label>Gastos Mensais:</label>
+                        <input type="text" name="gm5" id="gm5" placeholder="R$ 0,00">
+                    </div>
+                    <button type="button" onclick="calcularm5()">Calcular Saldo</button>
+                    <div class="resultado" id="r5"></div>
+                </div>
+                <div class="form-card">
+                    <h3>Junho</h3>
+                    <div class="form-group">
+                        <label>Salário Mensal:</label>
+                        <input type="text" name="sl6" id="sl6" placeholder="R$ 0,00">
+                    </div>
+                    <div class="form-group">
+                        <label>Gastos Mensais:</label>
+                        <input type="text" name="gm6" id="gm6" placeholder="R$ 0,00">
+                    </div>
+                    <button type="button" onclick="calcularm6()">Calcular Saldo</button>
+                    <div class="resultado" id="r6"></div>
+                </div>
+                <div class="form-card">
+                    <h3>Julho</h3>
+                    <div class="form-group">
+                        <label>Salário Mensal:</label>
+                        <input type="text" name="sl7" id="sl7" placeholder="R$ 0,00">
+                    </div>
+                    <div class="form-group">
+                        <label>Gastos Mensais:</label>
+                        <input type="text" name="gm7" id="gm7" placeholder="R$ 0,00">
+                    </div>
+                    <button type="button" onclick="calcularm7()">Calcular Saldo</button>
+                    <div class="resultado" id="r7"></div>
+                </div>
+                <div class="form-card">
+                    <h3>Agosto</h3>
+                    <div class="form-group">
+                        <label>Salário Mensal:</label>
+                        <input type="text" name="sl8" id="sl8" placeholder="R$ 0,00">
+                    </div>
+                    <div class="form-group">
+                        <label>Gastos Mensais:</label>
+                        <input type="text" name="gm8" id="gm8" placeholder="R$ 0,00">
+                    </div>
+                    <button type="button" onclick="calcularm8()">Calcular Saldo</button>
+                    <div class="resultado" id="r8"></div>
+                </div>
+                <div class="form-card">
+                    <h3>Setembro</h3>
+                    <div class="form-group">
+                        <label>Salário Mensal:</label>
+                        <input type="text" name="sl9" id="sl9" placeholder="R$ 0,00">
+                    </div>
+                    <div class="form-group">
+                        <label>Gastos Mensais:</label>
+                        <input type="text" name="gm9" id="gm9" placeholder="R$ 0,00">
+                    </div>
+                    <button type="button" onclick="calcularm9()">Calcular Saldo</button>
+                    <div class="resultado" id="r9"></div>
+                </div>
+                <div class="form-card">
+                    <h3>Outubro</h3>
+                    <div class="form-group">
+                        <label>Salário Mensal:</label>
+                        <input type="text" name="sl10" id="sl10" placeholder="R$ 0,00">
+                    </div>
+                    <div class="form-group">
+                        <label>Gastos Mensais:</label>
+                        <input type="text" name="gm10" id="gm10" placeholder="R$ 0,00">
+                    </div>
+                    <button type="button" onclick="calcularm10()">Calcular Saldo</button>
+                    <div class="resultado" id="r10"></div>
+                </div>
+                <div class="form-card">
+                    <h3>Novembro</h3>
+                    <div class="form-group">
+                        <label>Salário Mensal:</label>
+                        <input type="text" name="sl11" id="sl11" placeholder="R$ 0,00">
+                    </div>
+                    <div class="form-group">
+                        <label>Gastos Mensais:</label>
+                        <input type="text" name="gm11" id="gm11" placeholder="R$ 0,00">
+                    </div>
+                    <button type="button" onclick="calcularm11()">Calcular Saldo</button>
+                    <div class="resultado" id="r11"></div>
+                </div>
+                <div class="form-card">
+                    <h3>Dezembro</h3>
+                    <div class="form-group">
+                        <label>Salário Mensal:</label>
+                        <input type="text" name="sl12" id="sl12" placeholder="R$ 0,00">
+                    </div>
+                    <div class="form-group">
+                        <label>Gastos Mensais:</label>
+                        <input type="text" name="gm12" id="gm12" placeholder="R$ 0,00">
+                    </div>
+                    <button type="button" onclick="calcularm12()">Calcular Saldo</button>
+                    <div class="resultado" id="r12"></div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary btn-lg">Salvar Todos os Valores</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
